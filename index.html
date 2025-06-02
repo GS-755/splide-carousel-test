@@ -5,48 +5,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon.ico" />
     <title>[Test] splide-carousel</title>
+    <!-- TailwindCSS CDN-->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <!-- splide-carousel import start -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
     <!-- splide-carousel import end -->
 </head>
-<body>
-    <!-- carousel start -->
-    <section class="splide" aria-labelledby="carousel-heading" aria-label="Splide Basic HTML Example">
-        <h1 id="carousel-heading">[Test] splide-carousel</h1>
-        <div class="splide__track">
-            <ul class="splide__list">
-                <li class="splide__slide">
-                    <img src="/assets/images/01.jpg" alt="Good cake #1" />
-                </li>
-                <li class="splide__slide">
-                    <img src="/assets/images/02.jpg" alt="Good cake #2" />
-                </li>
-                <li class="splide__slide">
-                    <img src="/assets/images/03.jpg" alt="Good cake #3" />
-                </li>
-                <li class="splide__slide">
-                    <img src="/assets/images/04.jpg" alt="Good cake #4" />
-                </li>
-                <li class="splide__slide">
-                    <img src="/assets/images/05.jpg" alt="Good cake #5" />
-                </li>
-                <li class="splide__slide">
-                    <img src="/assets/images/06.jpg" alt="Good cake #6" />
-                </li>
-                <li class="splide__slide">
-                    <img src="/assets/images/07.jpg" alt="Good cake #7" />
-                </li>
-                <li class="splide__slide">
-                    <img src="/assets/images/08.jpg" alt="Good cake #8" />
-                </li>
-                <li class="splide__slide">
-                    <img src="/assets/images/09.jpg" alt="Good cake #9" />
-                </li>
-            </ul>
+<body class="bg-white dark:bg-[#121212]">
+    <div class="container-md">
+        <!-- carousel start -->
+        <section class="splide" aria-labelledby="carousel-heading" aria-label="[Test] splide-carousel">
+            <h1 id="carousel-heading" class="text-center text-black dark:text-white font-bold text-2xl my-3 md:my-5">[Test] splide-carousel</h1>
+            <p class="text-black dark:text-white mb-3 md:mb-5 ml-3 md:ml-5">Carousel theme: Default</p>
+            <div class="splide__track bg-[#CFCFC4] dark:bg-gray-800 rounded-lg">
+                <ul class="splide__list p-15">
+                    <li class="splide__slide">
+                        <img src="/assets/images/01.jpg" alt="Good cake #1" 
+                            data-splide-interval="1000" class="object-cover p-15 w-full" />
+                    </li>
+                    <li class="splide__slide">
+                        <img src="/assets/images/02.jpg" alt="Good cake #2" 
+                            data-splide-interval="1000" class="object-cover p-15 w-full " />
+                    </li>
+                    <li class="splide__slide">
+                        <img src="/assets/images/03.jpg" alt="Good cake #3" 
+                            data-splide-interval="1000" class="object-cover p-15 w-full " />
+                    </li>
+                    <li class="splide__slide">
+                        <img src="/assets/images/04.jpg" alt="Good cake #4" 
+                            data-splide-interval="1000" class="object-cover p-15 w-full " />
+                    </li>
+                    <li class="splide__slide">
+                        <img src="/assets/images/05.jpg" alt="Good cake #5" 
+                            data-splide-interval="1000" class="object-cover p-15 w-full " />
+                    </li>
+                    <li class="splide__slide">
+                        <img src="/assets/images/06.jpg" alt="Good cake #6" 
+                            data-splide-interval="1000" class="object-cover p-15 w-full " />
+                    </li>
+                    <li class="splide__slide">
+                        <img src="/assets/images/07.jpg" alt="Good cake #7" 
+                            data-splide-interval="1000" class="object-cover p-15 w-full " />
+                    </li>
+                    <li class="splide__slide">
+                        <img src="/assets/images/08.jpg" alt="Good cake #8" 
+                            data-splide-interval="1000" class="object-cover p-15 w-full " />
+                    </li>
+                    <li class="splide__slide">
+                        <img src="/assets/images/09.jpg" alt="Good cake #9" 
+                            data-splide-interval="1000" class="object-cover p-15 w-full " />
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- carousel end -->
+        <!-- footer start -->
+        <div class="mt-10 mb-10 text-center">
+            <h3 class="text-dark dark:text-white text-lg">Test footer</h3>
         </div>
-    </section>
-    <!-- carousel end -->
+        <!-- footer end -->
+    </div>
     <!-- Script(s) start -->
      <script type="text/javascript" src="/scripts/load-carousel.js"></script>
     <!-- Script(s) end -->
